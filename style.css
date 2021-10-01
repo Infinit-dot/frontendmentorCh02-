@@ -48,6 +48,7 @@ ol {
 }
 .card__img {
   position: relative;
+  display: inline-block;
 }
 .card__img img {
   max-width: 100%;
