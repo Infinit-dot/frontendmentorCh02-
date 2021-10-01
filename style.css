@@ -7,27 +7,26 @@
   --headingsClr: hsla(0, 0%, 100%, 0.6);
   --overlay: hsl(278, 99%, 32%);
 }
-/* }
-font-family: 'Inter', sans-serif;
-font-family: 'Lexend Deca', sans-serif; */
+
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
- 
-  }
-  html, body {
-      width: 100%;
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+}
 
 body {
   font-size: 15px;
   font-weight: 400;
   color: var(--paragraphsClr);
   background-color: var(--darkBlue);
-  line-height: 1.5;
+  line-height: 1.7;
 }
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -36,17 +35,15 @@ ul, ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40%;
-  margin-top: 3em;
-  margin-bottom: 3em;
+  height: 820px;
 }
 .container {
-  max-width: 460px;
+  max-width: 420px;
   width: 82%;
 }
 .card__content {
   overflow: hidden;
-  background-color: var(--desaturatedBlue); 
+  background-color: var(--desaturatedBlue);
   border-radius: 0.5em;
 }
 .card__img {
@@ -68,11 +65,11 @@ ul, ol {
   opacity: 0.4;
 }
 .card__left {
-    padding: 1em 1.8em;
+  padding: 1em 2em;
 }
 
 .card__left h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--white);
@@ -83,43 +80,85 @@ ul, ol {
 }
 
 .card__left p {
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-  }
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-size: 0.867rem;
+}
 span {
   color: var(--accentClr);
 }
 
 .stats {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 2.5em;
+  margin-bottom: 1em;
 }
 
 .stats li {
   margin-top: 1.5em;
   line-height: 1.6;
 }
-.stats > li p:first-child{
-  font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
+.stats > li p:first-child {
+  font-family: "Inter", sans-serif;
+  font-size: 1.467rem;
   font-weight: 700;
   color: var(--white);
 }
 
-.stats > li p:last-child{
+.stats > li p:last-child {
   text-transform: uppercase;
   color: var(--headingsClr);
   font-size: 0.8rem;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
 }
 .attribution {
-    display: block;
-    position: fixed;
-    bottom: 1em;
-    font-size: 11px;
-    text-align: center;
-    width: 100%;
-  }
+  display: block;
+  position: fixed;
+  bottom: 1em;
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+}
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1230px) {
+  .container {
+    max-width: 1100px;
+    width: 82%;
+  }
+  .card__content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    max-height: 445px;
+    justify-content: space-between;
+  }
+  .card__left {
+    margin-left: 2em;
+    width: 40%;
+  }
+  .card__left h1 {
+    font-size: 2rem;
+    text-align: left;
+    line-height: 1.4;
+  }
+  .card__left p {
+    font-family: "Inter", sans-serif;
+    text-align: left;
+    font-size: 1rem;
+  }
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+  }
+  .stats > li p:first-child {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+
 }

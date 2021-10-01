@@ -20,9 +20,13 @@
       <section class="card">
         <div class="container">
           <article class="card__content"> 
-            <div class="card__img">
-              <img src="images\image-header-mobile.jpg" alt="people in a meeting">
-            </div>
+              <picture class="card__img">
+                <source media="(min-width: 1230px)"
+                   srcset="images/image-header-desktop.jpg">
+                <img src="images/image-header-mobile.jpg"
+                alt="people in a meeting">
+             </picture>
+
              <div class="card__left">
               <h1 class="card__title">Get <span>insights</span> that help your business grow.</h1>
               <p class="card__text">Discover the benefits of data analytics and make better decisions regarding revenue, customer
